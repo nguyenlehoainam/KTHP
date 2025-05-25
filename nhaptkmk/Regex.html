@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regex</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>Username</td>
+        <td>
+          <input type="text" id="user" />
+        </td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td>
+          <input type="text" name="" id="pass" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button onclick="myF()">Kiem tra</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+  <script>
+    // yêu cầu mật khẩu bắt đầu bằng một chữ cái và dài ít nhất 6 ký tự
+    const rePass = /^[a-zA-Z][a-zA-Z0-9]{5,}$/;
+    const myF = () => {
+      let username = document.getElementById("user").value;
+      let password = document.getElementById("pass").value;
+      if (username === "" || password === "") {
+        alert("Bạn nhập sai!");
+        return;
+      }
+      if (!rePass.test(password)) {
+        alert("Bạn nhập sai!");
+        return;
+      }
+      // The check for the first character being a letter is already handled by the regex
+      alert("Bạn nhập đúng!");
+    };
+  </script>
+</html>

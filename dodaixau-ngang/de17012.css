@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+.headerSection {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logoDiv {
+  display: flex;
+  align-items: center;
+}
+
+.logoDiv img {
+  height: 60px;
+  width: auto;
+}
+
+.searchInputContainer {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.inputField {
+  flex-grow: 1;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  outline: none;
+}
+
+.searchButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  height: 100%;
+}
+
+.searchButton:hover {
+  background-color: #45a049;
+}
+
+.iconGroup {
+  display: flex;
+  gap: 20px;
+}
+
+.iconItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.iconItem i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.iconItem p {
+  font-size: 14px;
+}
+
+.iconItem:hover p,
+.iconItem:hover i {
+  color: green;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+}
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  color: white;
+}
+
+.menu li a:hover {
+  background-color: hotpink;
+}
+.menu1 {
+  position: absolute;
+  list-style: none;
+  background-color: black;
+  padding: 0px;
+  width: 200px;
+  display: none;
+}
+.menu1 a {
+  text-decoration: none;
+}
+.menu li:hover ul.menu1 {
+  display: block;
+}
+.content {
+  width: 100%;
+}
+.head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  background-color: rgb(255, 0, 183);
+}
+.bottom {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  border: 1px solid black;
+  width: 180px;
+  height: 200px;
+  margin: 10px 20px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 50%;
+  background-color: aqua;
+}
